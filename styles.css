@@ -26,8 +26,9 @@
 }
 
 html {
-    font-size  : 62.5%;
-    font-family: 'DM Sans', sans-serif;
+    font-size      : 62.5%;
+    font-family    : 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -392,15 +393,15 @@ main {
 
 
 .plans-container--card {
-    position         : relative;
-    width            : 70%;
-    min-width        : 230px;
-    max-width        : 300px;
-    height           : 250px;
-    margin           : 50px auto 0;
-    background-color : var(--warm-black);
-    border-radius    : 15px;
-    box-shadow       : 0 4px 8px rgba(89, 73, 30, .16);
+    position        : relative;
+    width           : 70%;
+    min-width       : 190px;
+    max-width       : 300px;
+    height          : 250px;
+    margin          : 50px auto 0;
+    background-color: var(--warm-black);
+    border-radius   : 15px;
+    box-shadow      : 0 4px 8px rgba(89, 73, 30, .16);
 }
 
 
@@ -497,4 +498,34 @@ main {
     background-position: center;
     background-repeat  : no-repeat;
     vertical-align     : text-bottom;
+}
+
+footer {
+    display         : flex;
+    width           : 100%;
+    height          : 150px;
+    background-color: var(--bitcoin-orange);
+}
+
+footer section {
+    displaY        : flex;
+    width          : 50%;
+    justify-content: center;
+    align-items    : center;
+}
+
+footer .left ul {
+    font-size  : 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style : none;
+}
+
+.left li {
+    margin: 10px 0;
+}
+
+.left a {
+    text-decoration: none;
+    color          : var(--just-white);
 }
