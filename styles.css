@@ -345,7 +345,7 @@ main {
     width              : 100%;
     min-width          : 320px;
     height             : 60vh;
-    background-image   : url('./assets/images/bitcoinbaby2x.png');
+    /* background-image   : url('./assets/images/bitcoinbaby.png'); */
     background-position: center;
     background-size    : cover;
     background-repeat  : no-repeat;
@@ -528,4 +528,10 @@ footer .left ul {
 .left a {
     text-decoration: none;
     color          : var(--just-white);
+}
+
+@media (max-width: 931px){
+    .bitcoin-img-container {
+        background-image: url('./assets/images/bitcoinbaby2x.png')
+    }
 }
